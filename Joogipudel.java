@@ -1,6 +1,5 @@
 public class Joogipudel{
   double maht;
-  //mis enum?
   enum pudelityyp{
     klaas, plastik, plekk;
   }
@@ -16,15 +15,12 @@ public Joogipudel(Jook jook, double maht, pudelityyp tyyp, double mass, double m
   this.mass = mass;
   this.maksumus = maksumus;
 }
-  public double mass(){ //miks getMass kõigil? mingi põhjus?
-    if( jook != null){
-      mass += jook.erikaal;
-    }
-
+  public double mass(){
+    mass = (mass + jook.erikaal)/1000;
     return mass;
   }
 
-  public double omahind(){//kus need valemid tulevad? peab ise välja mõtlema?
+  public double omahind(){
     maksumus = (maksumus/100) + maht/1000 * jook.hind/100;
     return maksumus;
   }
