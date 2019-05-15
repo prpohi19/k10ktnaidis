@@ -1,7 +1,2 @@
 # k10ktnaidis
-
-
-Kontrolltöö näidisülesande lahendamine
-
-
-http://minitorn.tlu.ee/~jaagup/kool/java/kursused/19/prpohi/ktnaidis.txt
+https://github.com/prpohi19/k10ktnaidis/pull/8
