@@ -1,15 +1,15 @@
 package tund10;
 
 public class Joogipudelikast {
-    enum Pudelityyp { PLASTIK, KLAAS, METALL }
-    Pudelityyp pudelityyp;
+    enum Kastityyp { PLASTIK, PAPP, PUIT }
+    Kastityyp kastityyp;
     double kastihind;
     double kastimass;
     int pudelitearv;
     Joogipudel[] pudelid;
 
-    public Joogipudelikast(Pudelityyp pudelityyp, double hind, double mass, int pudeleid){
-        this.pudelityyp = pudelityyp;
+    public Joogipudelikast(Kastityyp kastityyp, double hind, double mass, int pudeleid){
+        this.kastityyp = kastityyp;
         this.kastihind = hind;
         this.kastimass = mass;
         this.pudelitearv = pudeleid;

@@ -21,7 +21,7 @@ public class Joogipudel {
 
     public double getMass(){
         if (this.jook != null){
-            return mass + jook.erikaal;
+            return mass + (jook.erikaal * this.maht);
         }
         return mass;
     }

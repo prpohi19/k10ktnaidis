@@ -15,7 +15,7 @@ public class Joogivaat {
         try {
             if (joogipudel.maht >= jookMilliLitrites) {
                 joogipudel.jook = jook;
-                jookMilliLitrites -= jook.erikaal;
+                this.jookMilliLitrites -= jook.erikaal;
             }
         } catch (Exception e){
             System.out.println("Ei mahu");
