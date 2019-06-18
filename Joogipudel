@@ -1,0 +1,28 @@
+public class Joogipudel{
+  enum pudelityyp{
+    plast, klaas, plekk;
+  }
+
+  pudelityyp tyyp;
+  Jook jook;
+  double maht;
+  double mass;
+  double maksumus;
+
+public Joogipudel(pudelityyp tyyp, Jook jook, double maht, double mass, double maksumus){
+  this.tyyp = tyyp;
+  this.jook = jook;
+  this.maht = maht;
+  this.mass = mass;
+  this.maksumus = maksumus;
+}
+  public double getMass(){
+    mass = (mass + jook.kaal)/1000;
+    return mass;
+  }
+
+  public double getOmahind(){
+    maksumus = (maksumus/100) + maht/1000 * jook.hind/100;
+    return maksumus;
+  }
+}
